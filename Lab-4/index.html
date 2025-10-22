@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=uk-ua>
+  <head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Лаб. №4</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+     <h1>Моя перша HTML-форма</h1>
+     <form action="https://httpbin.org/post" method="post">
+        <br>
+        <label for="surname"> Прізвище: </label> 
+        <input id="surname" type="text" name="surname">
+          <br>
+
+        <br>
+          <label for="date"> Дата народження: </label>   
+        <input id="date" type="date" name="date" value="дд. мм. гггг" >
+        <br>
+            
+          <br> 
+           <label for="email"> Імейл:  </label> 
+        <input id="email" type="email" name="email"  >
+        <br>
+        
+        <br>
+           <label for="Message"> Повідомлення: </label>   
+        <textarea name="message" rows="2" cols="15">
+        </textarea> 
+        <br><br>
+        
+        <input id="Message" type="submit" value="Надіслати">
+        <input id="Message" type="reset" value="Очистити">
+
+        <br><br>
+         <picture>
+            <source media="(max-width: 468px)" srcset="https://picsum.photos/seed/picsum/300/500">
+            <img src="https://picsum.photos/seed/picsum/1000/400">
+        </picture>
+      
+        <br> <label for="Drinks"> Ваші улюблені напої? </label>
+        <br> <input type="checkbox" name="vehicle" value="tea"> Чай
+        <br> <input type="checkbox" name="vehicle" value="mojito"> Мохіто
+        <br> <input type="checkbox" name="vehicle" value="smoothies"> Смузі
+        <br> <input type="checkbox" name="vehicle" value="juice"> Сік
+
+        <br> <label for="Drinks"> Моя націоналіність</label>
+        <br> <input type="checkbox" name="vehicle" value="Ukrainian"> Українець
+        <br> <input type="checkbox" name="vehicle" value="American"> Американець
+        <br> <input type="checkbox" name="vehicle" value="Japanese"> Японець
+
+     </form>
+
+  </body>
+</html>
